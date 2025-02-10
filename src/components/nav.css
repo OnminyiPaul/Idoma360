@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+
+html, body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: black;
+    height: 100%;
+    /* margin: -20px; */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    /* margin-top: -20px; */
+    top: 0;
+    background-color: #fff;
+   
+  }
+#root {
+    height: 100%;
+  }
+  a:hover{
+    color: #E82B2B;
+    transform: translateY(-10);
+    transition: .3s ease-in-out;
+  }
+nav{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    /* border-bottom: 2px solid red; */
+    /* position: fixed;   */
+    z-index: 1000;
+}
+nav .left{ 
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #E82B2B;
+    border: 2px solid #E82B2B;
+    border-radius: 100%;
+}
+.right ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px; 
+}
+ul li{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    padding-left: 10px;
+    list-style: none;
+    word-wrap: break-word;
+}
+.right a{
+    color: white;
+    text-decoration: none;
+}
+.end i{
+    margin-right: 50px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.active{
+    text-decoration: underline;
+    color: #E82B2B;
+}
+.div1{
+    background-image: url('/images/home1.png');
+}
+
+
+.home{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 100%;
+    box-shadow: 0px -10px 10px -10px black;
+}
+.home .text{
+    position: absolute;
+    top: 50%;
+    left: 51.5%; 
+    transform: translate(-50%, -50%); 
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.home .text img{
+    height: 550px;
+}
+.top img{
+    width: 100%;
+    display: block;
+    margin-left: -5px;
+}
+/* .text{
+    width: 535px;
+    height: 324px;
+    top: 208px;
+    left: 120px;
+    gap: 24px;
+
+} */
+ .letters{
+    margin-top: -100px;
+    z-index: 1000;
+ }
+.text h1{
+    width: 500px;
+    height: 140px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 70.2px;
+    letter-spacing: 0px;
+    color: white;
+}
+.text p{
+    width: 535px;
+    height: 96px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #E9E4E4;
+    /* padding-top: -20px; */
+}
+.home-footer{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.home-footer p{
+    font-weight: 200;
+    font-size: 10px;
+    color: rgb(216, 234, 251);
+}
+.home-footer p span{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.home-footer .iterm h4{
+    color: #E9E4E4;
+}
+
+.container{
+    background-color: #fff;;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    justify-content: space-evenly;
+}
+.map img{
+    width: 400px;
+}
+
+.history{
+    margin-top:50px ;
+    display: block;
+    max-width: 45%;
+}
+.history{
+    text-decoration: none;
+    font-weight: 500;
+}
+.history a{
+    color: red;
+    text-decoration: none;
+}
+.history h1{
+    color: black;
+    font-size: 32px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 41.60px;
+    word-wrap: break-word
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+.image-container img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 35%; 
+    transform: translate(-50%, -50%); 
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.text-overlay h1{
+    width: 506px;
+    height: 52px;
+    gap: 0px;
+    opacity: 0px;
+    padding-top: 0;
+}
+.text-overlay p{
+    margin-top: -10;
+    width: 506px;
+    height: 64px;
+    gap: 0px;
+    opacity: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px;
+
+}
+.text-overlay a{
+    text-decoration: none;
+    border: 1px solid red;
+    background-color: #E82B2B;
+    color: #fff;
+    padding: 5px 15px 15px 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.intrest{
+    text-align: center;
+    background-color: #F6F4F3;
+}
+.intrest h1{
+    margin-top: 30px;
+    color: #000000;
+    font-size: 26px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 41.60px;
+    word-wrap: break-word
+}
+.intrest p{
+    padding-top: -10px;
+    color: #3B3B3B;
+    font-size: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    word-wrap: break-word
+    Content
+}
+.intrest .container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #F6F4F3;
+    padding: 1rem 1rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.intrest .container .item{
+    color: #000;
+    background-color: #fff;
+    /* padding: .5rem; */
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+}
+.intrest .container .item img{
+    width: 50px;
+}
+.intrest a{
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+}
+
+.project a{
+    color: red;
+    text-decoration: none;
+} 
+/*Projects shapping Idoma land */
+.project{
+    display: block;
+}
+.main h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.main p{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.school{
+    display: flex;
+}
+.school img{
+    width: 250px;
+}
+.school figcaption{
+    text-align: center;
+    font-size: .9rem;
+}
+/* trad council */
+.trad-council{
+    background-color: #F6F4F3;
+}
+.trad-council h1{
+    padding-top: 10px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41.6px;
+    letter-spacing: 0px;
+    color: #000000;
+
+}
+.trad-council p{
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.16px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #3B3B3B;
+    margin-top: -15px;
+}
+.trad-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.trad-container img{
+    width: 180px;
+}
+.trad-container p{
+    margin-top: -8px;
+    font-size: 12px;
+    max-width:180px ;
+    font-weight: bold;
+}
+.trad-container p span{
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+   
+}
+.trad-container div{
+    /* max-width: 25%; */
+    padding: 10px;
+    text-align: left;
+}
+.trad-council a{
+    color: #E82B2B;
+    text-decoration: none;
+   }
+
+/* footer */
+footer{
+    margin-top: -15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+    color: #fff;
+}
+footer h2{
+    padding-top: 20px;
+    text-align: left;  
+}
+footer h2 span{
+    color: grey;
+}
+footer h2 i{
+    color: indigo;
+
+}
+.footer{
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer .iterm{
+    font-size: 12px;
+    display: block;
+    text-align: left;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.foot-note{
+    display: flex;
+    justify-content: space-between;
+    border-top: .5px solid grey;
+}
+.foot-note .left{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.foot-note .left a{
+    font-size: 12px;
+    padding: 5px;
+}
+.foot-note .right p{
+    font-size: 12px;
+}
